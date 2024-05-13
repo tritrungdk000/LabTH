@@ -1,5 +1,7 @@
 using Book;
+using Book.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Book.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +16,10 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
 // Register database
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IAuthorRepository, SQLAuthorRepository>();
+builder.Services.AddScoped<IBookRepository, SQLBookRepository>();
 
 var app = builder.Build();
 

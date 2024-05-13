@@ -147,3 +147,4 @@ D:\Tải xuống\Bài Tập\Thiết kế Web 2\Book\Book\Book\obj\Debug\net8.0\r
 D:\Tải xuống\Bài Tập\Thiết kế Web 2\Book\Book\Book\obj\Debug\net8.0\Book.pdb
 D:\Tải xuống\Bài Tập\Thiết kế Web 2\Book\Book\Book\obj\Debug\net8.0\Book.genruntimeconfig.cache
 D:\Tải xuống\Bài Tập\Thiết kế Web 2\Book\Book\Book\obj\Debug\net8.0\ref\Book.dll
+D:\Tải xuống\Bài Tập\Thiết kế Web 2\Book\Book\Book\obj\Debug\net8.0\Book.sourcelink.json
